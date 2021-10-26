@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel spot</title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Travel Spot</h2>
+      <div class="toggle"></div>  
+    </header>
+    
+    <video src="explore1.mp4" muted loop autoplay></video>
+    
+    <div class="overlay"></div> 
+
+     <div class="text">
+       <h2>Never Stop</h2>
+       <h3>Life is a journey, not a destination</h3>
+       <p>Travels give us an opportunity to visit new places and meet new people.<br/> 
+          It bring us in close to nature. Beauty, charm and quietness 
+          of nature present feast for eyes.</p>
+       <a href="#">Explore</a>
+     </div>
+
+    <ul class="social">
+        <li><a href="#"><img src="facebook.png" alt="Facebook icon"></a></li>
+        <li><a href="#"><img src="twitter.png" alt="Twitter icon"></a></li>
+        <li><a href="#"><img src="instagram.png" alt="Instagram icon"></a></li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Sign-up/Login</a></li>
+    </ul>
+  </div>
+    
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active') 
+    })
+  </script>
+
+</body>
+</html>
